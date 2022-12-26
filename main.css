@@ -66,6 +66,7 @@ button:hover {
   background: url("img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .about h1 {
   font-size: 70px;
@@ -330,7 +331,13 @@ footer h3 {
   font-size: 15px;
   margin-left: 5px;
 }
-
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .about {
     padding: 115px 20px;
