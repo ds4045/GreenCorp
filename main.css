@@ -5,7 +5,6 @@ body {
 }
 
 header {
-  position: sticky;
   top: 0;
   background: white;
   z-index: 1;
@@ -13,7 +12,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: fixed;
+  background: none;
+  left: 0;
+  right: 0;
+  transition: box-shadow, background-color 0.25s ease;
 }
+
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
+
 header a {
   font-size: 15px;
   font-weight: 600;
@@ -58,6 +68,7 @@ button:hover {
   height: 100px;
 }
 .about {
+  padding-top: 200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
